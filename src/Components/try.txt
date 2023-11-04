@@ -1,0 +1,1211 @@
+import React from 'react'
+
+function Demo() {
+  return (
+    <div>
+              <header>
+        <div className="container-fluid">
+          <nav className="navbar navbar-expand-lg navbar-light">
+         
+              <>
+                <div
+                  className="navbar-brand m-0 pl-4"
+                  style={{ cursor: "pointer" }}
+                >
+                  <img
+                    src={`${process.env.REACT_APP_BASE_URL}img/logo.png`}
+                    alt="logo"
+                  />
+                </div>
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  className="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul className="navbar-nav mx-auto">
+                    <li className="nav-item head-item">
+                      <a
+                        href="/"
+                        className="nav-link"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse.show"
+                      >
+                        My Events
+                      </a>
+                    </li>
+
+                    {/* <li className="nav-item head-item">
+                      <Link
+                        to="/chat"
+                        className="nav-link"
+                        data-toggle="collapse"
+                        ref={clickcatch}
+                        data-target=".navbar-collapse.show"
+                        onClick={addActive()}
+                      >
+                        Chat
+                      </Link>
+                    </li> */}
+                    {/* <li className="nav-item head-item">
+                  <a  className="nav-link">
+                    Activity
+                  </a>
+                </li>
+                <li className="nav-item head-item">
+                  <a  className="nav-link">
+                    User
+                  </a>
+                </li>
+                <li className="nav-item head-item">
+                  <a  className="nav-link">
+                    Demo
+                  </a>
+                </li> */}
+                  </ul>
+                </div>
+              {/* <div
+                className="collapse navbar-collapse"
+                style={{ color: "red" }}
+              >
+                Please relogin or Enter the correct Path
+              </div> */}
+
+              <div className="header-right">
+                <div
+                  className="dropdown search-box nav-link"
+                  id="navbtn"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  <div className="chat_Valiclass">
+                    <a to="/chat">
+                     chat {/* <HiOutlineChatAlt className="chatIcon" /> */}
+                    </a>
+                   
+                  </div>
+                  <div >
+                    <a href="/">
+                      <img
+                        className="search-head-icon"
+                        src={`${process.env.REACT_APP_BASE_URL}img/search.png`}
+                        alt="icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <form className="user-info">
+                  <li className="nav-item dropdown d-flex justify-content-center">
+                    <a
+                      className="nav-link"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        alt="pik"
+                      />
+                    </a>
+                    <div
+                      className="dropdown-menu"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <a
+                        className="dropdown-item"
+                        style={{ display: "flex" }}
+                      >
+                        Profile
+                      </a>
+                      <div className="dropdown-divider"></div>
+                      <a
+                        className="dropdown-item"
+                        style={{ display: "flex" }}
+                      >
+                        Sign Out
+                      </a>
+                    </div>
+                  </li>
+                </form>
+              </div>
+              </>
+          </nav>
+        </div>
+      </header>
+
+    </div>
+  )
+}
+
+export default Demo
+
+
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+function NewReactHedaer() {
+  return (
+    <Navbar bg="light" expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="#action2">Link</Nav.Link>
+            <NavDropdown title="Link" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">
+                Something else here
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#" disabled>
+              Link
+            </Nav.Link>
+          </Nav>
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default NewReactHedaer;
+
+
+ /* ************************MainContainer Perfect**************************** */
+
+ import React from "react";
+import { Container, Row } from "react-bootstrap";
+
+function Demo() {
+  return (
+    <div
+      style={{
+        background: "linear-gradient(107.56deg, #F5F9FA 0%, #DBE5EB 100%)",
+        // minHeight:"700px"
+      }}
+    >
+      <Container>
+        <Row>
+          <div className="col-sm-6 mainScreen text">
+            <h1>
+              WILD-CAUGHT SUSTAINABLE <span>SEAFOOD</span>
+            </h1>
+            <p className="pt-2">
+              A monthly seafood membership that delivers sustainably-sourced
+              seafood to your doorstep.
+            </p>
+            <button className="rounded-2">
+              <a className="btn btn-first" href="/">
+                RESERVE MY SHARE TODAY
+              </a>
+            </button>
+            <button>
+              <a className="btn btn-second" href="/">
+                HOW DOES IT WORK
+              </a>
+            </button>
+          </div>
+          <div className="col-sm-6 ">
+          <img src="chtifish.svg" alt="smalldish" className="small_image"/>
+          <img src="fish.png"  alt="Bigdish" className="image_homeScreen" />
+          <img src="chtifish.svg" alt="dish" className="medium_image"/>
+
+          </div>
+        </Row>
+      </Container>
+    </div>
+  );
+}
+
+export default Demo;
+
+
+****************Workimng react bootstrap tabbing********************
+
+import React from "react";
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+import Header from './Header'
+import Tab2 from "./Tab2";
+import Tab3 from "./Tab3";
+import "../Style/Style.scss"
+function Demo() {
+  return (
+   <div style={{paddingTop:"150px"}} className="container tabbing">
+     <p className="tabText" >As Seen on</p>
+      <Tabs
+      defaultActiveKey="forbes"
+      id="justify-tab-example"
+      className="mb-3 tabbingBorder"
+    >
+      <Tab eventKey="forbes" title="Forbes" >
+        <Header />
+      </Tab>
+      <Tab eventKey="epicurious" title="Epicurious">
+        <Tab2 />
+      </Tab>
+      <Tab eventKey="smarthatrawet" title="Smarthatrawet">
+        <Tab3 />
+      </Tab>
+      <Tab eventKey="bonappetit" title="Bon appetit">
+        <Tab3 />
+      </Tab>
+      <Tab eventKey="redearsDigest" title="RedearsDigest">
+        <Tab3 />
+      </Tab>
+    </Tabs>
+   </div>
+  );
+}
+
+export default Demo;
+
+
+Box***************************
+
+import React from "react";
+import "../App.css";
+function Demo() {
+  return (
+    <div className="" style={{ paddingTop: "100px" , maxHeight:"1000px" }}>
+      <h2 className="text-center boxHeading">What's in the box ?</h2>
+      <span className="d-flex justify-content-center"><hr className="line"/></span>
+      <div className="d-flex justify-content-center pt-2">
+        <img src="box.png" alt="box" className="boxdetail" />
+      </div>
+      <div className="d-flex justify-content-center  pt-4">
+        <p className=" fiscBox text-center mb-0">
+          We proudly ship a wide variety of wild-caught species from Alaska and
+          the Pacific Northwest including sockeye salmon, coho salmon,{" "}
+          <br className="pt-2" />
+          pacific cod, pacific halibut and wild Alaska pollock.
+        </p>
+      </div>
+
+      <div className="checkbox pt-4">
+        <div className="row jutify-content-center">
+          <div className="col-sm-6 ">
+            <ul>
+              <li className="pt-2">
+                <img src="check.png" alt="check" className="rounded-circle m-2" />
+                Individually-Sealed (Avg. 6 oz. Each
+              </li>
+              <li className="pt-2">
+              <img src="check.png" alt="check" className="rounded-circle m-2" />
+              Ready-to-Cook</li>
+              <li className="pt-2">
+              <img src="check.png" alt="check" className="rounded-circle m-2" />
+              Sustainably Harvested</li>
+            </ul>
+          </div>
+          <div className="col-sm-6">
+            <ul>
+              <li className="pt-2">
+              <img src="check.png" alt="check" className="rounded-circle m-2" />
+              Caught and Processed in the USA</li>
+              <li className="pt-2">
+              <img src="check.png" alt="check" className="rounded-circle m-2" />
+              Wild Caught</li>
+              <li className="pt-2">
+              <img src="check.png" alt="check" className="rounded-circle m-2" />
+              Never Farmed or Genetically Modified</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="sidepic.svg"  alt="sidepic" className="sidepiicbox"/>
+    </div>
+  );
+}
+
+export default Demo;
+
+
+
+*************Pricing Page *******************
+
+import React from "react";
+import { Card } from "react-bootstrap";
+import "../App.css";
+function Demo() {
+  return (
+    <div style={{ paddingTop: "100px" }}>
+      <h2 className="text-center boxHeading">Choose Your Plan</h2>
+      <span className="d-flex justify-content-center">
+        <hr className="line" />
+      </span>
+      <div className="d-flex justify-content-center  pt-4 pb-5 ">
+        <p className=" fiscBoxCenter text-center mb-0">
+          We'll send you a box <span className="fw-bold">once a month.</span>{" "}
+          You can change, pause or cancel your membership anytime before it
+          renews <span className="fw-bold">each month.</span>
+        </p>
+      </div>
+      <div>
+        <div className="d-flex flex-row  buttonPrice p-1 rounded-3 Pricing">
+          <div className=" p-3 activeMonth text-center">Every Month</div>
+          &nbsp;&nbsp;
+          <div className=" p-3 text-center">Every 2 Month</div>
+        </div>
+
+        <div className="container pt-5">
+          <div className="d-flex flex-row gap-3">
+            <div className="p-3 col-md-4 cardShadow rounded-4">
+              <div className="d-flex justify-content-center">
+                <img src="one.png" alt="crab" style={{ width: "312px" }} />
+              </div>
+              <div className="d-flex flex-column">
+                <span className="titlePhoto pt-3 fw-bold">Wild Salmon Box</span>
+                <p className="cardDisc pt-2 pb-2">
+                  Our signature box featuring 6-ounce portions of wild salmon —
+                  such as Sockeye and Coho.
+                </p>
+                <div className="d-flex flex-row  buttonPrice p-1 rounded-3">
+                  <div className=" p-3 activeMonth text-center">12 Pack</div>
+                  &nbsp;&nbsp;
+                  <div className=" p-3 text-center">24 pack</div>
+                </div>
+                <div className="d-flex justify-content-around pt-4  amountFlex">
+                  <p>$10.99</p>
+                  <p>$0.99</p>
+                  <p>$131.88</p>
+                </div>
+                <div className="d-flex justify-content-around pt-3  amountText">
+                  <p>Per 6 oz. Pack</p>
+                  <p>Shipping</p>
+                  <p>Monthly Total</p>
+                </div>
+                <div className="pt-3 cradButton pb-2">
+                  <button className="p-3">Select</button>
+                </div>
+              </div>
+            </div>
+            <div className="p-3 col-md-4 cardShadow rounded-4">
+              <div className="d-flex justify-content-center">
+                <img src="two.png" alt="crab" style={{ width: "312px" }} />
+              </div>
+              <div className="d-flex flex-column">
+                <span className="titlePhoto pt-3 fw-bold">Wild Salmon Box</span>
+                <p className="cardDisc pt-2 pb-2">
+                  Our signature box featuring 6-ounce portions of wild salmon —
+                  such as Sockeye and Coho.
+                </p>
+                <div className="d-flex flex-row  buttonPrice p-1 rounded-3">
+                  <div className=" p-3 activeMonth text-center">12 Pack</div>
+                  &nbsp;&nbsp;
+                  <div className=" p-3 text-center">24 pack</div>
+                </div>
+                <div className="d-flex justify-content-around pt-4  amountFlex">
+                  <p>$10.99</p>
+                  <p>$0.99</p>
+                  <p>$131.88</p>
+                </div>
+                <div className="d-flex justify-content-around pt-3  amountText">
+                  <p>Per 6 oz. Pack</p>
+                  <p>Shipping</p>
+                  <p>Monthly Total</p>
+                </div>
+                <div className="pt-3 cradButton pb-2">
+                  <button className="p-3">Select</button>
+                </div>
+              </div>
+            </div>
+            <div className="p-3 col-md-4 cardShadow rounded-4">
+              <div className="d-flex justify-content-center">
+                <img src="three.png" alt="crab" style={{ width: "312px" }} />
+              </div>
+              <div className="d-flex flex-column">
+                <span className="titlePhoto pt-3 fw-bold">Wild Salmon Box</span>
+                <p className="cardDisc pt-2 pb-2">
+                  Our signature box featuring 6-ounce portions of wild salmon —
+                  such as Sockeye and Coho.
+                </p>
+                <div className="d-flex flex-row  buttonPrice p-1 rounded-3">
+                  <div className=" p-3 activeMonth text-center">12 Pack</div>
+                  &nbsp;&nbsp;
+                  <div className=" p-3 text-center">24 pack</div>
+                </div>
+                <div className="d-flex justify-content-around pt-4  amountFlex">
+                  <p>$10.99</p>
+                  <p>$0.99</p>
+                  <p>$131.88</p>
+                </div>
+                <div className="d-flex justify-content-around pt-3  amountText">
+                  <p>Per 6 oz. Pack</p>
+                  <p>Shipping</p>
+                  <p>Monthly Total</p>
+                </div>
+                <div className="pt-3 cradButton pb-2">
+                  <button className="p-3">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rightSidepic">
+          <img src="rightside.png" alt="rightSide" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Demo;
+
+{
+  /* <div class="card-group">
+<div class="card">
+  <img src="..." class="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card">
+  <img src="..." class="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+</div> */
+}
+
+***************CSSS*************
+$mainColor: #009bd6;
+$fontSize: 14px;
+$fontFamily : 'Lato';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.body {
+
+}
+.container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+}
+
+.bgGrad{
+  background: linear-gradient(107.56deg, #F5F9FA 0%, #DBE5EB 100%);
+}
+
+.paddTop{
+  padding-top: 150px;
+}
+
+.leftClass {
+  a {
+    color: $mainColor;
+  }
+  button {
+    // margin-left: 30px;
+    width: 115px;
+    // padding: 10px;
+    // font-weight: 700;
+    // color: white;
+    box-shadow: 5px 5px 10px #1c84ad;
+    background-color: $mainColor;
+    // border: none;
+    // border-radius: 10px;
+  }
+}
+
+.sidePic {
+  transform: rotate(359deg);
+  // position: absolute;
+  float: inline-end;
+  top: 522px;
+  // object-fit: contain;
+  height: 300px;
+  // width: 255.32px;
+}
+
+
+.mainScreen {
+  // border: 1px solid black;
+  // height: 100%;
+  h1 {
+    // padding-top: 180px;
+    // font-weight: 600;
+    font-family: "Noto Serif";
+    // font-size: 48px;
+    // color: #1d1d1d;
+    // font-style: normal;
+    letter-spacing: 2px;
+    // line-height: 70px;
+  }
+  span {
+    color: $mainColor;
+  }
+  p {
+    font-family: "Lato";
+    // font-weight: 400;
+    color: #666666;
+    font-size: 18px !important;
+    // line-height: 35px;
+  }
+  button {
+    border: none;
+  }
+  button .btn-first {
+    // color: #fff;
+    // font-weight: 600;
+    font-size: $fontSize;
+    box-shadow: 0px 5px 10px #1c84ad;
+    background-color: $mainColor;
+    font-family: $mainColor;
+  }
+  button .btn-second {
+    border: 1px solid $mainColor;
+    // margin-left: 20px;
+    color: $mainColor;
+  }
+}
+
+.small_image {
+  height: 122px;
+  width: 124px;
+}
+
+.image_homeScreen {
+  max-width: 515px;
+  // height: 453px;
+  // padding-top:80px ;
+  object-fit: contain;
+  position: relative;
+  // bottom: 80px;
+  // left: 50px;
+  // max-width: 453px;
+  height: 646px;
+  // height: auto;
+  width: 100%;
+}
+
+
+
+.medium_image {
+  height: 184px;
+  position: relative;
+  float: right;
+  bottom: 160px;
+  right: 40px;
+}
+
+.text {
+}
+
+.headerLine {
+  // list-style: none;
+  // li {
+  //   padding-left: 30px;
+  //   font-weight: 600;
+  //   color: $mainColor;
+  // }
+}
+
+.HeaderClass {
+  a {
+    padding-left: 30px;
+    font-weight: 600;
+    color: $mainColor;
+  }
+}
+
+
+
+
+
+
+.tabbing {
+  p:hover {
+    text-decoration-line: underline;
+  }
+
+  ul {
+    border: 2px solid white;
+  }
+
+  ul:hover {
+    border: 2px solid $mainColor;
+  }
+
+  li img {
+    height: 100px;
+    max-width: 100px;
+    object-fit: contain;
+    border: none;
+    border-radius: 7px;
+    overflow: hidden;
+    z-index: 99;
+  }
+
+  .tabText {
+    color: $mainColor;
+    font-family: "Noto Serif";
+    position: absolute;
+    left: 48%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $fontSize;
+    padding-top: 30px;
+  }
+  .tabbingBorder {
+    justify-content: center;
+    height: 226px;
+    align-content: center;
+    border-radius: 18px;
+    align-items: center;
+
+    //   .nav-link, .nav-tabs .nav-link{
+    //   // background-color: $mainColor;
+    //   // border-color : $mainColor;
+    // }
+
+    .nav-link.active {
+      border: 1px solid $mainColor;
+      border-radius: 2px;
+    }
+
+    //    .nav-link, .nav-tabs .nav-link.active {
+    //     background-color: black;
+    //     border-color : black;
+    // }
+
+    // #myTab :hover{
+    //   border: 2px solid blue;
+    //   color: #009bd6;
+    // }
+
+    // button .nav-link.active {
+    //   border: 2px solid $mainColor;
+    // }
+  }
+}
+
+.forbes {
+  font-family: "Noto Serif";
+  padding-top: 100px;
+}
+
+.forbesInside {
+  max-width: 500px;
+}
+
+.SmallContainer {
+  // max-height: 200px;
+  height: 200px;
+  border: 1px solid white;
+
+  p {
+    font-family: "Lato";
+    font-size: $fontSize;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .buttonprice {
+    border: 1px solid $mainColor;
+    background-color: $mainColor;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: $fontSize;
+    box-shadow: 5px 5px 10px #1c84ad;
+  }
+}
+
+.SmallContainer:hover {
+  border: 1px solid $mainColor;
+  p {
+    text-decoration-line: underline;
+    text-decoration-color: $mainColor;
+  }
+}
+
+.rightside {
+  position: absolute;
+  right: 0;
+  object-fit: contain;
+  top: 1700px;
+}
+
+.boxHeading {
+  font-family: "Noto Serif";
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.boxdetail {
+  object-fit: contain;
+}
+.fiscBox {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Lato";
+  text-transform: capitalize;
+  line-height: 30px;
+  span {
+    color: $mainColor;
+  }
+}
+
+.fiscBox:hover {
+  text-decoration-line: underline;
+  text-decoration-color: $mainColor;
+}
+
+.checkbox {
+  max-width: 768px;
+  margin: auto;
+  ul {
+    list-style: none;
+    img {
+      object-fit: none;
+      width: 20px;
+      height: 20px;
+      background-color: $mainColor;
+    }
+    ul:hover {
+      text-decoration-line: underline;
+      text-decoration-color: $mainColor;
+    }
+  }
+}
+
+.checkbox {
+  li:hover {
+    text-decoration-line: underline;
+    text-decoration-color: $mainColor;
+  }
+}
+
+.sidepiicbox {
+  position: relative;
+  bottom: 250px;
+  object-fit: contain;
+}
+
+.line {
+  border-radius: 2px;
+  width: 50px;
+  border-top: 3px solid black;
+  opacity: 1;
+}
+
+.Pricing {
+  max-width: 420px;
+  margin: auto;
+  .pricingToggle {
+    border-radius: 10px;
+    border: 1px solid $mainColor;
+  }
+  .pricingButton {
+    background-color: $mainColor;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Lato";
+    border-radius: 5px;
+  }
+  .twiceMonth {
+    color: $mainColor;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Lato";
+  }
+}
+
+.titlePhoto {
+  font-size: 18px;
+  font-family: "Lato";
+  text-transform: capitalize;
+  // float: left;
+}
+
+.cardDisc {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #666666;
+  text-transform: capitalize;
+}
+
+.buttonPrice {
+  border: 2px solid $mainColor;
+  div {
+    width: 50%;
+    color: #009bd6;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .activeMonth {
+    background-color: $mainColor;
+    border-radius: 10px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+.amountFlex {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  height: 35px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.amountText {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #444444;
+  opacity: 0.8;
+}
+
+.cradButton {
+  button {
+    border: none;
+    border: 1px solid $mainColor;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $mainColor;
+    text-transform: uppercase;
+  }
+}
+
+.fiscBoxCenter {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato";
+  text-transform: capitalize;
+  line-height: 30px;
+  span {
+    color: $mainColor;
+  }
+}
+
+.cardShadow {
+  box-shadow: 0px 1px 4px #e0bbbb;
+}
+
+.cardShadow:hover {
+  box-shadow: 0px 1px 4px #111010;
+}
+
+.rightSidepic {
+  left: 82.55%;
+  margin-top: -230px;
+  position: absolute;
+  object-fit: contain;
+  img {
+    width: 255px;
+  }
+}
+
+.threeGeneration {
+  p {
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $mainColor;
+  }
+}
+
+.handling {
+  height: 600px;
+  align-items: center;
+}
+
+.taka25 {
+  // border:"1px solid black";
+  // border: 1px solid black;
+  color: $mainColor;
+  width: 40%;
+  div {
+    padding-left: 230px;
+  }
+  p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #444444;
+  }
+  button {
+    border: 1px solid $mainColor;
+    background-color: $mainColor;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: $fontSize;
+    box-shadow: 5px 5px 10px #1c84ad;
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+}
+
+.taka75{
+  width: 59%;
+  // height: 100%;
+  // border: 2px solid black;
+}
+
+.rcs_sliderSet{
+  // height: 650px;
+}
+.rcs_dotsSet{
+  display: none;
+}
+
+.rcs_sliderBox{
+  // width: 100% !important;
+  height: 500px !important;
+  background-color: #fff !important;
+}
+.rcs_slideCon{
+  height: 100% !important;
+  // transform: translateX(2222px) !important;
+  right: 50px;
+}
+
+.rcs_slideCon .itemWrapper{
+  height: auto !important;
+  // right: 50px;
+  margin: 0px 20px !important;
+}
+
+.rcs_slideCon .itemWrapper img{
+  height: 500px !important;
+  width: 400px !important;
+  object-fit: cover !important;
+  border-radius: 50px !important;
+}
+
+.itemWrapper{
+  padding: 0 !important;
+}
+.rcs_buttonSet{
+  // left: 150px !important;
+  // top: 91% !important;
+}
+
+.threepara{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 35px;
+
+text-transform: capitalize;
+
+color: #666666;
+}
+
+.name{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 25px;
+
+text-transform: capitalize;
+
+color: #111111;
+}
+
+.adress{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+text-transform: capitalize;
+
+color: #444444;
+}
+
+.rightsidethree{
+  position: absolute;
+  left: 0px;
+  top: 5650px;
+}
+.buttonprices{
+  border: 2px solid $mainColor;
+  background-color: #fff;
+  padding: 10px;
+  width: 15%;
+  color: $mainColor;
+  font-weight: 700;
+  font-size: $fontSize;
+}
+
+
+.footerhead{
+  font-family: 'Noto Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+
+text-transform: uppercase;
+
+color: #009BD6;
+}
+
+.footerdisc{
+  font-family: 'Lato';
+font-style: normal;
+width: 70%;
+font-weight: 400;
+font-size: 16px;
+line-height: 35px;
+/* or 219% */
+
+text-align: center;
+text-transform: capitalize;
+
+color: #666666;
+}
+
+.footbutton{
+  border: 1px solid $mainColor;
+    background-color: $mainColor;
+    padding: 15px;
+    color: #fff;
+    width: 20%;
+    font-weight: 700;
+    font-size: $fontSize;
+    box-shadow: 5px 5px 10px #1c84ad;
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.backgroundvala{
+  background-color: #F2F7F8;
+}
+
+.backgroundfoot{
+
+  background: linear-gradient(91.97deg, #F5F9FA 0%, #DDE7ED 100%);
+}
+
+.logo2{
+  height: 50px;
+}
+
+.anchorclass{
+  width: 70%;
+  margin: auto;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  justify-content: space-around;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.blogclass{
+  width: 50%;
+  justify-content: space-around;
+  margin: auto;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  
+  text-transform: uppercase;
+  
+  color: #444444;
+}
+
+.symbolclass{
+  width: 25%;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.lastFoot{
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_footertop{
+  padding-top: 150px;
+
+}
+.main_footer{
+}

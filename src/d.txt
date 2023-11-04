@@ -1,0 +1,41 @@
+// function handleScroll(event) {
+//   event.preventDefault();
+//   const container = appRef.current;
+//   const scrollStep = 10;
+//   const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
+//   const scrollSpeed = Math.abs(delta * scrollStep);
+//   const clampedScrollSpeed = Math.min(scrollSpeed, 10);
+//   const targetScrollTop = container.scrollTop + clampedScrollSpeed;
+//   const maxScrollTop = container.scrollHeight - container.clientHeight;
+//   const clampedScrollTop = Math.max(
+//     0,
+//     Math.min(maxScrollTop, targetScrollTop)
+//   );
+//   container.scrollTo({
+//     top: clampedScrollTop,
+//     behavior: "smooth",
+//   });}
+
+// function handleTouchStart(event) {
+//   event.preventDefault();
+//   const container = appRef.current;
+//   const scrollStep = 10;
+//   const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
+//   const scrollSpeed = Math.abs(delta * scrollStep);
+//   const clampedScrollSpeed = Math.min(scrollSpeed, 10);
+//   const targetScrollTop = container.scrollTop + clampedScrollSpeed;
+//   const maxScrollTop = container.scrollHeight - container.clientHeight;
+//   const clampedScrollTop = Math.max(
+//     0,
+//     Math.min(maxScrollTop, targetScrollTop)
+//   );
+//   container.scrollTo({
+//     top: clampedScrollTop,
+//     behavior: "smooth",
+//   });}
+
+
+  // container.addEventListener("wheel", handleScroll, { passive: false });
+  // container.addEventListener("touchstart", handleTouchStart, {
+  //   passive: false,
+  // });

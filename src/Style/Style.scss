@@ -1,0 +1,1424 @@
+$mainColor: #009bd6;
+$fontSize: 14px;
+$fontFamily: "Lato";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+}
+
+.container {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+}
+
+.bgGrad {
+  background: linear-gradient(107.56deg, #f5f9fa 0%, #dbe5eb 100%);
+}
+
+.poi {
+  cursor: pointer;
+}
+.paddTop {
+  padding-top: 150px;
+  overflow-x: hidden;
+}
+
+.HeaderClass {
+  a {
+    color: $mainColor;
+  }
+}
+
+.leftClass {
+  a {
+    color: $mainColor;
+  }
+  button {
+    width: 115px;
+    box-shadow: 5px 5px 10px #1c84ad;
+    background-color: $mainColor;
+    // background-image: (linear-gradient(270deg, #8e9ac2, #42579a));
+    // animation: TransitioningBackground 10s ease infinite;
+    // transform: scale(1);
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: rgba(240, 231, 240, 0.2);
+      width: 20px;
+      height: 100%;
+      top: 0;
+      filter: blur(5px);
+      transform: translateX(0px) skewX(-15deg);
+    }
+  }
+ 
+  button:hover {
+    // animation: hovers 1s ease-out;
+    &:hover {
+      background-image: (linear-gradient(to left, #2d8fe5, #d155b8));
+      transform: scale(1);
+      &::after {
+        transform: translateX(100px) skewX(-15deg);
+        transition: 1s;
+      }
+    }
+    //  background-color: #111010;
+    // background-image: (linear-gradient(to left, #2d8fe5, #d155b8));
+   
+  }
+
+
+
+  
+}
+
+
+@keyframes TransitioningBackground {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
+  }
+}
+
+@keyframes hovers {
+  0% {
+    background: $mainColor;
+    // rotate: (5deg);
+    // width: 110px;
+  }
+  50% {
+    // width: 110px;
+    // rotate: (0deg);
+    background: #177db8;
+  }
+  75% {
+    // rotate: (-5deg);
+    // width: 110px;
+    background: $mainColor;
+  }
+  100% {
+    // rotate: (0deg);
+    // width: 110px;
+    background: $mainColor;
+  }
+}
+
+
+@keyframes forbeimage {
+  0% {
+    // background: $mainColor;
+    rotate: (45deg);
+    // width: 110px;
+  }
+  25%{
+    rotate: (90deg);
+  }
+  50% {
+    // width: 110px;
+    rotate: (180deg);
+    // background: #177db8;
+  }
+  75% {
+    rotate: (240deg);
+    // width: 110px;
+    // background: $mainColor;
+  }
+  100% {
+    rotate: (360deg);
+    // width: 110px;
+    // background: $mainColor;
+  }
+}
+// .tab-pane {
+//   transform: translateY(100%) !important;
+//   transition: transform 0.2s !important;
+// }
+// .tab-pane.active {
+//   transform: translateY(0%) !important;
+// }
+
+.forbess.active {
+  animation: slide-right 2s ease-out;
+}
+
+.demo.active {
+  animation: slide-left 2s ease-out;
+}
+
+// @keyframes slide-left {
+//   0% { opacity: 0; transform: translatex(100%); }
+//   100% { opacity: 1; transform: translateY(0); }
+// }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translatex(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translatex(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  // 0% {
+  //   left: 0;
+  // }
+  // 48% {
+  //   -webkit-transform: rotateY(0deg);
+  // }
+  // 50% {
+  //   left: calc(100% - 100px);
+  //   -webkit-transform: rotateY(180deg);
+  // }
+  // 98% {
+  //   -webkit-transform: rotateY(180deg);
+  // }
+  // 100% {
+  //   left: 0;
+  //    -webkit-transform: rotateY(0deg);
+  // }
+  // 0% {
+  //   right: 0;
+  //   transform: translateX(-100%);
+  // }
+  // 100% {
+  //   right: 100%;
+  //   transform: translateX(0%);
+  // }
+}
+
+.navbar-toggler {
+  color: transparent !important;
+}
+
+.sidePic {
+  transform: rotate(359deg);
+  float: inline-end;
+  top: 522px;
+  height: 300px;
+}
+
+.mainScreen {
+  .buttonShrink {
+    gap: 20px;
+  }
+  h1 {
+    font-family: "Noto Serif";
+    letter-spacing: 2px;
+  }
+  span {
+    color: $mainColor;
+  }
+  p {
+    font-family: "Lato";
+    color: #666666;
+    font-size: 18px !important;
+  }
+  button {
+    border: none;
+  }
+  button .btn-first {
+    font-size: $fontSize;
+    box-shadow: 0px 5px 10px #1c84ad;
+    background-color: $mainColor;
+    font-family: $mainColor;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: rgba(240, 231, 240, 0.2);
+      width: 20px;
+      height: 100%;
+      top: 0;
+      filter: blur(5px);
+      transform: translateX(0px) skewX(-15deg);
+    }
+  }
+  button .btn-first:hover {
+    // background-color: $mainColor;
+    &:hover {
+      background-image: (linear-gradient(to left, #2d8fe5, #d155b8));
+      transform: scale(1);
+      &::after {
+        transform: translateX(200px) skewX(-15deg);
+        transition: 1s;
+      }
+  }
+}
+  button .btn-second {
+    font-size: $fontSize;
+    border: 1px solid $mainColor;
+    color: $mainColor;
+  }
+  button .btn-second:hover {
+    color: $mainColor;
+    border: 1px solid $mainColor;
+   
+    
+  &:hover{
+    background-color: $mainColor;
+    // border: 2px solid transparent;
+    color : white;
+    box-shadow: 0px 3px 8px #1c84ad;
+    // transform :scale(1.05);
+  }
+  }
+}
+
+.image_homeScreen {
+  max-width: 515px;
+  object-fit: contain;
+  position: relative;
+  height: 646px;
+  width: 100%;
+}
+
+.tabbing {
+  ul {
+    border: 2px solid white;
+  }
+
+  ul:hover {
+    border: 2px solid $mainColor;
+  }
+
+  li img {
+    height: 100px;
+    max-width: 100px;
+    object-fit: contain;
+  }
+  .tabText {
+    color: $mainColor;
+    font-family: "Noto Serif";
+    left: 48%;
+    font-size: $fontSize;
+  }
+  .tabbingBorder {
+    height: 226px;
+    .nav-link.active {
+      box-shadow: 0px 0px 8px black;
+    }
+  }
+}
+
+.forbes {
+  font-family: "Noto Serif";
+  padding-top: 100px;
+}
+
+.forbesInside {
+  max-width: 500px;
+}
+
+// .forbesInside:hover{
+//     animation: forbeimage 1s ease-out;
+
+// }
+
+.SmallContainer {
+  border: 1px solid white;
+  p {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    text-decoration-line: none;
+  }
+  .buttonprice {
+    border: 1px solid $mainColor;
+    background-color: $mainColor;
+    font-size: $fontSize;
+    box-shadow: 5px 5px 10px #1c84ad;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: rgba(240, 231, 240, 0.2);
+      width: 20px;
+      height: 30px;
+      top: 0;
+      filter: blur(5px);
+      transform: translateX(0px) skewX(-15deg);
+    }
+  }
+  .buttonprice:hover {
+    &:hover {
+      background-image: (linear-gradient(to left, #2d8fe5, #d155b8));
+          // background-image: (linear-gradient(to left, $mainColor, #8994b8));
+      // background-image: (linear-gradient(to left, rgb(224, 48, 210) , #39d1d6));
+      // background-image: (linear-gradient(to left, rgb(162, 149, 221) , #39d1d6));
+      transform: scale(1);
+      &::after {
+        transform: translateX(160px) skewX(-15deg);
+        transition: 1s;
+      }
+    }
+  }
+}
+
+.rightside {
+  position: absolute;
+  right: 0;
+  object-fit: contain;
+  top: 1700px;
+}
+
+.boxHeading {
+  font-family: "Noto Serif";
+}
+
+.boxdetail {
+  max-width: 868px;
+  object-fit: contain;
+  width: 100%;
+}
+.fiscBox {
+  font-family: $fontFamily;
+  max-width: 60%;
+  span {
+    color: $mainColor;
+  }
+}
+
+.fiscBox:hover {
+  text-decoration-line: underline;
+  text-decoration-color: $mainColor;
+}
+
+.checkbox {
+  max-width: 768px;
+  ul {
+    img {
+      object-fit: none;
+      background-color: $mainColor;
+    }
+    ul:hover {
+      text-decoration-line: underline;
+      text-decoration-color: $mainColor;
+    }
+  }
+}
+
+.checkbox {
+  li:hover {
+    text-decoration-line: underline;
+    text-decoration-color: $mainColor;
+  }
+}
+
+.sidepiicbox {
+  position: relative;
+  bottom: 250px;
+  object-fit: contain;
+}
+
+.line {
+  border-radius: 2px;
+  width: 50px;
+  border-top: 3px solid black;
+  opacity: 1;
+}
+
+.Pricing {
+  max-width: 420px;
+}
+
+.cardShadow {
+  width: 352px !important;
+  box-shadow: 0px 1px 4px #e0bbbb;
+  img {
+    max-width: 312px;
+  }
+}
+
+.cardShadow:hover {
+  box-shadow: 0px 1px 4px #111010;
+}
+
+.titlePhoto {
+  font-family: $fontFamily;
+}
+
+.cardDisc {
+  font-family: $fontFamily;
+  color: #666666;
+}
+
+.buttonPrice {
+  border: 2px solid $mainColor;
+  div {
+    width: 50%;
+    color: $mainColor;
+    font-family: $fontFamily;
+    font-size: 16px;
+  }
+  .activeMonth {
+    background-color: $mainColor;
+    font-family: $fontFamily;
+  }
+}
+
+.amountFlex {
+  font-family: $fontFamily;
+  height: 35px;
+  color: #444444;
+}
+
+.amountText {
+  font-family: $fontFamily;
+  font-size: 12px;
+  color: #444444;
+  opacity: 0.7;
+}
+
+.cradButton {
+  button {
+    border: 1px solid $mainColor;
+    width: 100%;
+    font-family: $fontFamily;
+    color: $mainColor;
+  }
+}
+
+.fiscBoxCenter {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato";
+  text-transform: capitalize;
+  line-height: 30px;
+  span {
+    color: $mainColor;
+  }
+}
+
+.rightSidepic {
+  left: 84%;
+  margin-top: -230px;
+  position: absolute;
+  object-fit: contain;
+  img {
+    max-width: 250px;
+  }
+}
+
+.threeGeneration {
+  p {
+    font-family: "Noto Serif";
+    color: $mainColor;
+  }
+}
+
+.handling {
+  height: 600px;
+}
+
+.taka25 {
+  color: $mainColor;
+  width: 40%;
+  .textDiv {
+    padding-left: 230px;
+  }
+  p {
+    font-family: $fontFamily;
+    color: #444444;
+  }
+  button {
+    border: 1px solid $mainColor;
+    background-color: $mainColor;
+    padding: 10px;
+    font-size: $fontSize;
+    box-shadow: 5px 5px 10px #1c84ad;
+    font-family: $fontFamily;
+  }
+}
+
+.taka75 {
+  width: 60%;
+  margin-left: 40px;
+}
+
+.WrapperAll {
+  overflow-x: hidden;
+}
+
+.listImg {
+  display: flex;
+  gap: 40px;
+  padding: 10px;
+  transform: translateX(0px);
+  transition: all 1s ease;
+}
+
+.listItem{
+  .imageSlider{
+    display: none;
+  //       position: absolute;
+  //       left: 10px;
+  //       border: 1px solid white;
+  //       bottom: 0%;
+  //       background-color: #f7efef;
+  //       width: 400px;
+  //       border-radius: 0px 0px 25px 25px;
+  //       height: 100px;
+  //       font-family: 'Lato';
+  //       font-style: normal;
+  //       font-weight: 400;
+  //       font-size: 14px;
+  //       line-height: 25px;
+  //       text-transform: capitalize;
+  //       color: #444444;
+  }
+
+  
+}
+
+.imageAdjust {
+  max-width: 400px;
+  height: 500px;
+  border-radius: 25px;
+  object-fit: contain;
+}
+
+.listItem:hover{
+  .imageSlider{
+      display: block;
+      position: absolute;
+      left: 10px;
+      border: 1px solid white;
+      bottom: 0%;
+      background-color: #f7efef;
+      width: 400px;
+      border-radius: 0px 0px 25px 25px;
+      height: 100px;
+      font-family: 'Lato';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+      text-transform: capitalize;
+      color: #444444;
+  }
+
+  // display: block;
+  //     position: absolute;
+  //     left: 10px;
+  //     border: 1px solid white;
+  //     bottom: 0%;
+  //     background-color: #f7efef;
+  //     width: 400px;
+  //     border-radius: 0px 0px 25px 25px;
+  //     height: 100px;
+  //     font-family: 'Lato';
+  //     font-style: normal;
+  //     font-weight: 400;
+  //     font-size: 14px;
+  //     line-height: 25px;
+  //     text-transform: capitalize;
+  //     color: #444444;
+}
+.right {
+  background-color: $mainColor;
+  color: white;
+}
+
+.navbar-toggler:focus ~ .navbar-toggler-icon{
+  background-image: url('https://rms.mindinventory.net/static/media/mi-logo.972e135a.svg') !important;
+}
+
+.sliderArroww {
+  border: 2px solid $mainColor;
+  height: 50px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  .bi-chevron-left {
+    color: $mainColor;
+  }
+}
+
+.left {
+  margin-left: 100px;
+}
+
+.threepara {
+  font-family: $fontFamily;
+  color: #666666;
+}
+
+.name {
+  font-family: $fontFamily;
+}
+
+.adress {
+  font-family: $fontFamily;
+  font-size: 12px;
+  color: #444444;
+}
+
+.buttonprices {
+  border: 2px solid $mainColor;
+  width: 15%;
+  color: $mainColor;
+  font-size: $fontSize;
+}
+
+.rightsidethree {
+  position: absolute;
+  left: 0px;
+  top: 5650px;
+}
+
+.backgroundvala {
+  background-color: #f2f7f8;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+
+.footerhead {
+  font-family: "Noto Serif";
+  color: $mainColor;
+}
+
+.footerdisc {
+  font-family: $fontFamily;
+  width: 70%;
+  color: #666666;
+}
+
+.footbutton {
+  border: 1px solid $mainColor;
+  background-color: $mainColor;
+  padding: 14px;
+  width: 18%;
+  font-size: $fontSize;
+  box-shadow: 5px 5px 10px #1c84ad;
+  font-family: $fontFamily;
+}
+
+.anchorclass {
+  width: 70%;
+  font-family: $fontFamily;
+  color: #444444;
+}
+
+.blogclass {
+  width: 50%;
+  font-family: $fontFamily;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.symbolclass {
+  width: 25%;
+}
+
+.cardRes {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .mainScreen {
+    h1 {
+      font-size: 35px;
+    }
+  }
+
+  .taka25 .textDiv {
+    padding-left: 160px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .mainScreen {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .sidePic {
+    top: 450px;
+  }
+  .forbesInside {
+    max-width: 375px;
+  }
+  .sidepiicbox {
+    max-width: 170px;
+    bottom: 272px;
+  }
+
+  .cardShadow img {
+    max-width: 250px;
+  }
+  .cardShadow {
+    width: 300px !important;
+    box-shadow: 0px 1px 4px #e0bbbb;
+  }
+
+  .cardRes {
+    width: 100%;
+    max-width: 1140px;
+  }
+
+  .backgroundvala {
+    max-width: 992px;
+  }
+
+  .taka25 {
+    .textDiv {
+      padding-left: 120px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar > .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 992px !important;
+  }
+
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 800px !important;
+  }
+
+  .mainScreen {
+    h1 {
+      font-size: 27px;
+    }
+  }
+  .rightside {
+    img {
+      width: 200px;
+    }
+  }
+
+  .tabbing li img {
+    height: 90px;
+  }
+
+  .forSmallP {
+    padding-bottom: 100px !important;
+  }
+
+  .sidepiicbox {
+    bottom: 302px;
+  }
+
+  .cardShadow {
+    width: 260px !important;
+    img {
+      max-width: 225px;
+    }
+  }
+
+  .cardRes {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 55px;
+    justify-content: center;
+    overflow-x: scroll;
+  }
+
+  .backgroundvala {
+    max-width: 768px;
+  }
+  .footbutton {
+    width: 20%;
+  }
+
+  .taka25 {
+    .textDiv {
+      padding-left: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .sidepiicbox {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .paddTop {
+    padding-top: 100px;
+  }
+
+  .mainScreen button .btn-first {
+    font-size: 12px;
+  }
+
+  // .mainScreen button .btn-first a:hover{
+  //   background-color: #009bd6;
+  // }
+
+  .mainScreen button .btn-second {
+    font-size: 12px;
+  }
+  .mainScreen {
+    h1 {
+      font-size: 25px;
+    }
+    .maintain {
+      padding-left: 0px !important;
+    }
+    .buttonShrink {
+      flex-direction: column;
+      align-items: flex-start;
+      .btn-first {
+        box-shadow: 0px 0px 0px #c8d1d4 !important;
+      }
+      .btn-second {
+        margin: 0px;
+        margin-left: 0px !important;
+      }
+    }
+  }
+
+  .buttonPrice div {
+    padding: 0.5rem !important;
+  }
+
+  .tabbing {
+    li img {
+      max-width: 90px;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .cardRes {
+    max-width: 700px;
+    margin: auto;
+    padding-left: 150px;
+  }
+}
+
+@media only screen and (max-width: 805px) {
+  .mainScreen {
+    h1 {
+      font-size: 22px;
+    }
+  }
+  .forbesInside {
+    max-width: 350px;
+  }
+  .forSmallP {
+    padding-bottom: 30px !important;
+  }
+  .checkbox {
+    max-width: 600px;
+    .list-unstyled {
+      margin-bottom: 0px;
+    }
+  }
+  .SmallContainer {
+    margin: 0 !important;
+    .removepa {
+      padding: 0 !important;
+      p {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .paddTop {
+    padding-top: 55px;
+  }
+  .DounlePad {
+    padding-top: 150px;
+  }
+  .mainScreen {
+    width: 100%;
+    p {
+      padding-top: 20px !important;
+    }
+    .buttonShrink {
+      padding-bottom: 50px;
+      flex-direction: row !important;
+      .btn-first {
+        box-shadow: 0px 0px 0px #c8d1d4 !important;
+      }
+      .btn-second {
+        margin: 0px;
+      }
+    }
+  }
+
+  .tabbing .tabbingBorder {
+    height: 200px;
+    border: 2px solid;
+  }
+  .tabbing {
+    .tabText {
+      left: 40%;
+    }
+    li img {
+      max-width: 55px;
+      height: 55px;
+    }
+  }
+
+  .leftClass {
+    display: flex;
+    flex-direction: column;
+    button {
+      margin-top: 1rem;
+      margin-left: 0 !important;
+      width: 100px;
+    }
+  }
+  .reactStage {
+    display: none;
+  }
+  .sidePic {
+    display: none;
+  }
+
+  .col-sm-6 {
+    width: 100% !important;
+  }
+
+  .forbes {
+    padding-top: 50px;
+  }
+
+  .forSmallP {
+    .SmallScrren {
+      width: 75% !important;
+    }
+  }
+
+  .forbesInside {
+    max-width: 300px;
+    float: right;
+    margin-right: 35px;
+    padding-top: 2.5rem;
+  }
+  .rightside {
+    display: none;
+  }
+
+  .checkbox {
+    max-width: 530px;
+  }
+
+  .boxprice {
+    padding-top: 20px;
+  }
+
+  .fiscBox {
+    max-width: 85%;
+  }
+  .fiscBoxCenter {
+    width: 80%;
+    text-align: center !important;
+  }
+
+  .Pricing {
+    max-width: 315px;
+  }
+
+  .cardRes {
+    max-width: 576px;
+    margin: auto;
+    justify-content: start;
+    padding-left: 10px;
+  }
+
+  .buttonPrice div {
+    padding: 0.5rem !important;
+  }
+
+  .buttonprices {
+    width: 20%;
+  }
+
+  .backgroundvala {
+    max-width: 550px;
+  }
+  .footbutton {
+    width: 30%;
+  }
+
+  .handling {
+    flex-direction: column;
+  }
+
+  .taka25 {
+    div {
+      padding-left: 10px;
+    }
+  }
+  .taka25 {
+    width: 80%;
+    .middleButton {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .taka25 .textDiv {
+    padding-left: 0px;
+  }
+
+  .taka75 {
+    width: 90%;
+    margin-left: 0px;
+  }
+
+  .taka75 .imageAdjust {
+    max-width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    object-fit: contain;
+  }
+  .toComeCenter {
+    justify-content: start;
+  }
+
+  .afterMd {
+    width: 90% !important;
+    padding-left: 30px !important;
+  }
+
+  .responsiveSpace {
+    padding-bottom: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar > .container {
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 576px;
+  }
+
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 576px !important;
+  }
+
+  .mainScreen {
+    h1,
+    p {
+      padding-left: 0rem !important;
+      font-size: 24px;
+    }
+    p {
+      padding-top: 20px;
+    }
+    .buttonShrink {
+      margin-left: 0px !important;
+      padding-left: 0px !important;
+
+      align-items: flex-start;
+      .btn-first {
+        box-shadow: 0px 0px 0px #c8d1d4 !important;
+      }
+      .btn-second {
+        margin-left: 0px !important;
+      }
+    }
+  }
+
+  .tabbing .tabbingBorder {
+    height: 170px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    justify-content: start !important;
+    .smallScreenTab {
+      padding-left: 15px;
+    }
+  }
+
+  .forbesInside {
+    max-width: 200px;
+    padding-top: 2rem !important;
+    margin-right: 25px;
+  }
+
+  .forSmallP {
+    padding: 0 !important;
+    padding-bottom: 25px !important;
+
+    .SmallScrren {
+      padding-left: 20px !important;
+      padding-top: 24px;
+      width: 90% !important;
+    }
+  }
+
+  .SmallContainer {
+    margin: 0 !important;
+    padding-left: 5px !important;
+    .buttonprice {
+      box-shadow: 2px 4px 10px #1c84ad;
+    }
+    .removepa {
+      padding: 0 !important;
+      p {
+        width: 100% !important;
+        text-align: start !important;
+      }
+    }
+  }
+
+  .DounlePad {
+    padding-top: 200px;
+  }
+  .fiscBox {
+    max-width: 90%;
+  }
+
+  .checkbox {
+    max-width: 373px;
+    padding: 1rem;
+    margin: 0 !important;
+  }
+
+  .forbesInside {
+    max-width: 200px;
+    padding-top: 1.5rem !important;
+    margin-right: 20px;
+  }
+
+  .fiscBoxCenter {
+    width: 90%;
+    text-align: start !important;
+  }
+
+  .cardRes {
+    max-width: 550px;
+    margin: auto;
+  }
+
+  .cardRes {
+    .cardAdjust {
+      margin-left: 10px;
+    }
+  }
+
+  .buttonprices {
+    width: 30%;
+  }
+
+  .taka25 {
+    width: 90%;
+  }
+
+  .backgroundvala {
+    max-width: 400px;
+  }
+  .footbutton {
+    width: 40%;
+    box-shadow: 2px 4px 10px #1c84ad;
+  }
+  .footerFlex {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .paddTop {
+    padding-top: 50px;
+  }
+  .DounlePad {
+    padding-top: 160px;
+  }
+  .mainScreen {
+    h1,
+    p {
+      padding-left: 0rem !important;
+      // font-size: 20px;
+    }
+    p {
+      padding-top: 10px;
+    }
+    .buttonShrink {
+      margin-left: 0 !important;
+      flex-direction: column !important;
+      padding-left: 0px !important;
+
+      align-items: flex-start;
+      .btn-first {
+        box-shadow: 0px 0px 0px #c8d1d4 !important;
+      }
+      .btn-second {
+        margin-left: 0px !important;
+      }
+    }
+  }
+
+  .afterMd {
+    width: 90% !important;
+    padding-left: 20px !important;
+  }
+
+  .circleSize {
+    height: 17px;
+    width: 17px;
+  }
+  .tabbing .tabbingBorder {
+    .smallScreenTab {
+      padding-left: 20px;
+    }
+  }
+  .SmallScrren {
+    padding-left: 28px !important;
+    padding-top: 24px;
+  }
+
+  .taka25 div {
+    padding-left: 0px;
+  }
+
+  .checkbox {
+    font-size: 14px;
+    max-width: 300px;
+    .andar {
+      padding-left: 5px !important;
+    }
+  }
+
+  .buttonPrice div {
+    font-size: 14px;
+  }
+
+  .cardRes {
+    max-width: 350px;
+    margin: auto;
+    padding-left: 0px;
+    .cardAdjust {
+      margin-left: 1px;
+    }
+  }
+
+  .forbesInside {
+    max-width: 200px;
+    padding-top: 1rem !important;
+    margin-right: 15px;
+  }
+  .backgroundvala {
+    max-width: 350px;
+  }
+  .footbutton {
+    width: 42%;
+    padding: 12px;
+  }
+
+  .taka25 button {
+    padding: 8px;
+    box-shadow: 2px 4px 10px #1c84ad;
+  }
+
+  .taka75 {
+    width: 90%;
+    margin-left: 0px;
+    padding-top: 30px;
+    .imageAdjust {
+      max-width: 400px;
+      height: 300px;
+      border-radius: 25px;
+      object-fit: contain;
+    }
+  }
+  .firstCol {
+    div {
+      font-size: 12px;
+    }
+  }
+
+  .left {
+    margin-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  .leftClass {
+    padding-right: 3px !important;
+  }
+
+  .Pricing {
+    max-width: 300px;
+  }
+
+  .footbutton {
+    width: 46%;
+  }
+  .paddTop {
+    padding-top: 50px;
+  }
+  .DounlePad {
+    padding-top: 190px;
+  }
+  .mainScreen {
+    h1 {
+      font-size: 16px;
+    }
+  }
+
+  .cardRes {
+    padding-left: 15px;
+  }
+
+  .boxHeading {
+    padding-left: 10px;
+  }
+
+  .backgroundvala {
+    max-width: 300px;
+  }
+  .checkbox {
+    max-width: 280px;
+  }
+}
+
+
+.swirl-effect {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0.5;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  animation: swirl 1.5s linear infinite;
+}
+
+@keyframes swirl {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    opacity: 0.5;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) scale(2);
+    opacity: 0;
+  }
+}
