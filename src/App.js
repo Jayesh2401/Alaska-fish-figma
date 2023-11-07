@@ -55,9 +55,7 @@ function App() {
   }
 
   useEffect(() => {
-    window.onload = () => {
       setContentLoaded(true);
-    };
   }, []);
 
   return (
